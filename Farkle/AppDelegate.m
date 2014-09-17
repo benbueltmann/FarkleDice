@@ -7,15 +7,19 @@
 //
 
 #import "AppDelegate.h"
+#import <CheckMate/CheckMate.h>
+@import MapKit;
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [CheckMate initializeFramework:@[@"a245eb23e43f87bf38356b778d711c89", @"21c9b448b17883d777f9306c54db9fc8"]];
+
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -13,7 +13,6 @@
 		98711AF919896DF100782AF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98711AF719896DF100782AF0 /* InfoPlist.strings */; };
 		98711AFB19896DF100782AF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98711AFA19896DF100782AF0 /* main.m */; };
 		98711AFF19896DF100782AF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98711AFE19896DF100782AF0 /* AppDelegate.m */; };
-		98711B0219896DF100782AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98711B0019896DF100782AF0 /* Main.storyboard */; };
 		98711B0519896DF100782AF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98711B0419896DF100782AF0 /* ViewController.m */; };
 		98711B0719896DF100782AF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98711B0619896DF100782AF0 /* Images.xcassets */; };
 		98711B0E19896DF100782AF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98711B0D19896DF100782AF0 /* XCTest.framework */; };
@@ -21,6 +20,11 @@
 		98711B1019896DF100782AF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98711AF219896DF100782AF0 /* UIKit.framework */; };
 		98711B1819896DF200782AF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98711B1619896DF200782AF0 /* InfoPlist.strings */; };
 		98711B1A19896DF200782AF0 /* FarkleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98711B1919896DF200782AF0 /* FarkleTests.m */; };
+		98711B2519896E3300782AF0 /* DieLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98711B2419896E3300782AF0 /* DieLabel.m */; };
+		98711B2719896F5B00782AF0 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98711B2619896F5B00782AF0 /* CheckMate.framework */; };
+		98E2D9A51989866600D64F0F /* dice.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98E2D9A4198984FC00D64F0F /* dice.ttf */; };
+		98E2D9A61989867B00D64F0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98711B0019896DF100782AF0 /* Main.storyboard */; };
+		98E2D9A91989A68900D64F0F /* GameLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2D9A81989A68900D64F0F /* GameLogic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		98711B1519896DF200782AF0 /* FarkleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FarkleTests-Info.plist"; sourceTree = "<group>"; };
 		98711B1719896DF200782AF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		98711B1919896DF200782AF0 /* FarkleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FarkleTests.m; sourceTree = "<group>"; };
+		98711B2319896E3300782AF0 /* DieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DieLabel.h; path = ../DieLabel.h; sourceTree = "<group>"; };
+		98711B2419896E3300782AF0 /* DieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DieLabel.m; path = ../DieLabel.m; sourceTree = "<group>"; };
+		98711B2619896F5B00782AF0 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CheckMate.framework; sourceTree = "<group>"; };
+		98E2D9A4198984FC00D64F0F /* dice.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dice.ttf; sourceTree = "<group>"; };
+		98E2D9A71989A68900D64F0F /* GameLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLogic.h; sourceTree = "<group>"; };
+		98E2D9A81989A68900D64F0F /* GameLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLogic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98711B2719896F5B00782AF0 /* CheckMate.framework in Frameworks */,
 				98711AF119896DF100782AF0 /* CoreGraphics.framework in Frameworks */,
 				98711AF319896DF100782AF0 /* UIKit.framework in Frameworks */,
 				98711AEF19896DF100782AF0 /* Foundation.framework in Frameworks */,
@@ -101,6 +112,7 @@
 		98711AED19896DF100782AF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				98711B2619896F5B00782AF0 /* CheckMate.framework */,
 				98711AEE19896DF100782AF0 /* Foundation.framework */,
 				98711AF019896DF100782AF0 /* CoreGraphics.framework */,
 				98711AF219896DF100782AF0 /* UIKit.framework */,
@@ -117,6 +129,10 @@
 				98711B0019896DF100782AF0 /* Main.storyboard */,
 				98711B0319896DF100782AF0 /* ViewController.h */,
 				98711B0419896DF100782AF0 /* ViewController.m */,
+				98E2D9A71989A68900D64F0F /* GameLogic.h */,
+				98E2D9A81989A68900D64F0F /* GameLogic.m */,
+				98711B2319896E3300782AF0 /* DieLabel.h */,
+				98711B2419896E3300782AF0 /* DieLabel.m */,
 				98711B0619896DF100782AF0 /* Images.xcassets */,
 				98711AF519896DF100782AF0 /* Supporting Files */,
 			);
@@ -126,6 +142,7 @@
 		98711AF519896DF100782AF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				98E2D9A4198984FC00D64F0F /* dice.ttf */,
 				98711AF619896DF100782AF0 /* Farkle-Info.plist */,
 				98711AF719896DF100782AF0 /* InfoPlist.strings */,
 				98711AFA19896DF100782AF0 /* main.m */,
@@ -230,7 +247,8 @@
 			files = (
 				98711B0719896DF100782AF0 /* Images.xcassets in Resources */,
 				98711AF919896DF100782AF0 /* InfoPlist.strings in Resources */,
-				98711B0219896DF100782AF0 /* Main.storyboard in Resources */,
+				98E2D9A61989867B00D64F0F /* Main.storyboard in Resources */,
+				98E2D9A51989866600D64F0F /* dice.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +269,9 @@
 			files = (
 				98711B0519896DF100782AF0 /* ViewController.m in Sources */,
 				98711AFF19896DF100782AF0 /* AppDelegate.m in Sources */,
+				98E2D9A91989A68900D64F0F /* GameLogic.m in Sources */,
 				98711AFB19896DF100782AF0 /* main.m in Sources */,
+				98711B2519896E3300782AF0 /* DieLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +396,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Farkle/Farkle-Prefix.pch";
 				INFOPLIST_FILE = "Farkle/Farkle-Info.plist";
@@ -389,6 +413,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Farkle/Farkle-Prefix.pch";
 				INFOPLIST_FILE = "Farkle/Farkle-Info.plist";
@@ -456,6 +484,7 @@
 				98711B1F19896DF200782AF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98711B2019896DF200782AF0 /* Build configuration list for PBXNativeTarget "FarkleTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +493,7 @@
 				98711B2219896DF200782AF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
